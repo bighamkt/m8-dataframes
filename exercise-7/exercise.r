@@ -1,7 +1,7 @@
 # Exercise 7: Husky Football 2015 Season
 # Read in the Husky Football 2015 game data into a variable called `husky.games.2015`
-husky.games.2015<- read.csv(file = "huskies_2015.csv", header = TRUE)
-
+husky.games.2015<- read.csv("~/m8-dataframes/exercise-7/data/huskies_2015.csv", header = TRUE)
+View(husky.games.2015)
 # Create a vector of the teams that the Huskies played against during that season
 # Call this vector `not.huskies`. You'll need to convert this column to a vector
 not.huskies<- husky.games.2015[2]
@@ -25,8 +25,11 @@ max(husky.games.2015$combined.yards)
 # about the game that was played that had the most yards scored in it.
 # Take note of the steps from above including the opposing team, score, and date the game was played
 MostYardsScore<- function(games){
-  
+  date
+  opponent
+  score
+  return(paste("The Huskies scored the most yards on" date "when they played against the" opponent "and scored" score "points."))
 }
 
 # What was the highest yardage game so far this season?
-# Hint: Read in the dataset titled `huskies_2016.csv` and save it as a variable
+# Hint: Read in the data set titled `huskies_2016.csv` and save it as a variable
